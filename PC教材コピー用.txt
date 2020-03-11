@@ -1,36 +1,44 @@
+Pullã—ãŸéš›ã«æ”¹è¡ŒãŒç„¡ããªã‚‰ãªã„ã‚ˆã†ã«ã€ç©ºç™½è¡Œã‚’ã¯ã•ã‚“ã§ã„ã¾ã™ã€‚
+
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã«ã¯å½±éŸ¿ã—ã¾ã›ã‚“ã€‚
+
+
+
+
+
 <BMI.bat/BMI.cmd>
 
 @echo off
 
-rem ƒ†[ƒU[‚Ìg’·‚ğ•Ï”uheightv‚É‘ã“ü
+rem ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®èº«é•·ã‚’å¤‰æ•°ã€Œheightã€ã«ä»£å…¥
 
-set /p height="‚ ‚È‚½‚Ìg’·‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢Bicmj"
+set /p height="ã‚ãªãŸã®èº«é•·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚ï¼ˆcmï¼‰"
 
-rem ƒ†[ƒU[‚Ì‘Ìd‚ğ•Ï”uweightv‚É‘ã“ü
+rem ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ä½“é‡ã‚’å¤‰æ•°ã€Œweightã€ã«ä»£å…¥
 
-set /p weight="‚ ‚È‚½‚Ì‘Ìd‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢Bikgj"
+set /p weight="ã‚ãªãŸã®ä½“é‡ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚ï¼ˆkgï¼‰"
 
 echo;
 
-rem BMI‚ğŒvZ‚µ‚Ä•\¦
+rem BMIã‚’è¨ˆç®—ã—ã¦è¡¨ç¤º
 
 set /a BMI=(%weight%*10000)/(%height%*%height%)
  
-echo BMI‚Í%BMI%‚Å‚·B
+echo BMIã¯%BMI%ã§ã™ã€‚
 
-rem “K³‘Ìd‚ğŒvZ‚µ‚Ä•\¦
+rem é©æ­£ä½“é‡ã‚’è¨ˆç®—ã—ã¦è¡¨ç¤º
 
 set /a bestw=(%height%*%height%)*22/10000
 
-echo “K³‘Ìd‚Í%bestw%‚Å‚·B
+echo é©æ­£ä½“é‡ã¯%bestw%ã§ã™ã€‚
 
 echo;
 
-set /p no="EnterƒL[‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B"
+set /p no="Enterã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚"
 
 
 
-<Ï.bat/Ï.cmd>
+<ç©.bat/ç©.cmd>
 
 @echo off
 
@@ -42,7 +50,7 @@ set /a z=%x%*%y%
 
 echo %z%
 
-set /p no="EnterƒL[‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B"
+set /p no="Enterã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚"
 
 
 
@@ -56,57 +64,57 @@ Dim num,x
 
 num = 2
 
-Do While True num = MsgBox ("ƒEƒCƒ‹ƒX‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·‚©H",49,"ƒEƒCƒ‹ƒXî•ñ")
+Do While True num = MsgBox ("ã‚¦ã‚¤ãƒ«ã‚¹ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã‹ï¼Ÿ",49,"ã‚¦ã‚¤ãƒ«ã‚¹æƒ…å ±")
 
 If num = 1 Then Exit Do
 
 Loop
 
-MsgBox "ƒEƒCƒ‹ƒX‚ÌƒCƒ“ƒXƒg[ƒ‹‚ğn‚ß‚Ü‚·",0,"‚Í‚¶‚ß‚Ü‚·"
+MsgBox "ã‚¦ã‚¤ãƒ«ã‚¹ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’å§‹ã‚ã¾ã™",0,"ã¯ã˜ã‚ã¾ã™"
 
 WScript.Sleep(10000)
 
-MsgBox "ƒEƒCƒ‹ƒX‚ÌƒCƒ“ƒXƒg[ƒ‹‚ªŠ®—¹‚µ‚Ü‚µ‚½B",16,"Š®—¹"
+MsgBox "ã‚¦ã‚¤ãƒ«ã‚¹ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒå®Œäº†ã—ã¾ã—ãŸã€‚",16,"å®Œäº†"
 
 WScript.Sleep(3000)
 
-MsgBox "Œx:C:\Windows\system72\picture.sys‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\picture.sysãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
-MsgBox "Œx:C:\Windows\system72\activate.dat‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\activate.datãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(20)
 
-MsgBox "Œx:C:\Windows\system72\registry.dll‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\registry.dllãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(1000)
 
-MsgBox "Œx:C:\Windows\system72\mathematica.exe‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\mathematica.exeãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(1000)
 
-MsgBox "Œx:C:\Windows\system72\cmd.7zip‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\cmd.7zipãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
-MsgBox "Œx:C:\Windows\system72\b_screen.zip‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\b_screen.zipãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(1000)
 
-MsgBox "Œx:C:\Windows\system72\monument.zip‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\monument.zipãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(2000)
 
-MsgBox "Œx:C:\Windows\system72\userdata.log‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\userdata.logãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
-MsgBox "Œx:C:\Windows\system72\osinfo‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\osinfoãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
 WScript.Sleep(1000)
 
-MsgBox "Œx:C:\Windows\system72\exploler‚ª”j‘¹‚µ‚Ä‚¢‚Ü‚·I",16,"Windows"
+MsgBox "è­¦å‘Š:C:\Windows\system72\explolerãŒç ´æã—ã¦ã„ã¾ã™ï¼",16,"Windows"
 
-MsgBox "Œx:’áƒŒƒxƒ‹‚Èç’k‚Å‚·",16,"Windows"
+MsgBox "è­¦å‘Š:ä½ãƒ¬ãƒ™ãƒ«ãªå†—è«‡ã§ã™",16,"Windows"
 
 
 
-Beep‰¹FWScript.CreateObject("WScript.Shell").Run "rundll32 user32.dll,MessageBeep", 0, False
+BeepéŸ³ï¼šWScript.CreateObject("WScript.Shell").Run "rundll32 user32.dll,MessageBeep", 0, False
 
 
 <cat.vbs>
@@ -117,7 +125,7 @@ Dim num,x
 
 num = 2
 
-Do While True num = MsgBox ("‚±‚Ìƒ_ƒCƒAƒƒO‚ÍÁ‚¦‚Ü‚¹‚ñ",49,"‚¨”æ‚ê—l‚Å‚·")
+Do While True num = MsgBox ("ã“ã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã¯æ¶ˆãˆã¾ã›ã‚“",49,"ãŠç–²ã‚Œæ§˜ã§ã™")
 
 Loop
 
