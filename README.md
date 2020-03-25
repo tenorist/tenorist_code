@@ -13,6 +13,6 @@ using namespace std;
 bool f = "tenorist"=="tourist";
 cout << f << endl;
 ```
-answer : `0`
+output : `0`
 
 I'm not tourist.
