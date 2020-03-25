@@ -10,8 +10,8 @@ AtCoder、JOI、その他の問題を解き、勉強になったと思うもの�
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-bool f = tenorist==tourist;
-cout<<f<<endl;
+bool f = "tenorist"=="tourist";
+cout << f << endl;
 ```
 answer : `0`
 
