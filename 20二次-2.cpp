@@ -17,8 +17,8 @@ void solve() {
   rep(i,n) cin>>red[i].fi>>red[i].se;
   vi home;
   rep(i,n){
-    ll k=max(red[i].fi,red[i].se); //n‚·ŠÔ’u‚«Š·‚¦
-    home.eb(k+red[i].fi); //–ß‚é‚Ü‚Å
+    ll k=max(red[i].fi,red[i].se); //ç†Ÿã™æ™‚é–“ç½®ãæ›ãˆ
+    home.eb(k+red[i].fi); //æˆ»ã‚‹ã¾ã§
   }
   sort(all(home));
   reverse(all(home));
